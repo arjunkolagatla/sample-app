@@ -16,9 +16,9 @@ angular.module('sampleAppApp')
     }
 
     var checkTriangleType = function (s1, s2, s3) {
-      return (s1 + s2 < s3 || s1 + s3 < s2 || s2 + s3 < s1) && 'not a triangle' || (s1 === s2 && s2 === s3) && 'Equilateral' ||
-        (s1 === s2 || s1 === s3 || s2 === s3) && 'isosceles' ||
-        'scalene';
+      return (s1 + s2 < s3 || s1 + s3 < s2 || s2 + s3 < s1) && 'Not a triangle' || (s1 === s2 && s2 === s3) && 'Equilateral' ||
+        (s1 === s2 || s1 === s3 || s2 === s3) && 'Isosceles' ||
+        'Scalene';
     }
 
   }]);
