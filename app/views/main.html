@@ -1,0 +1,36 @@
+<div class="row" ng-controller="MainCtrl">
+  <div class="jumbotron">
+    <h1>Welcome!</h1>
+    <form name="myForm">
+      <div class="ts-row">
+        <label>Side 1:</label>
+        <input type="number" name="side1" id="side1" step=any class="ts-input-sides" placeholder="Please enter side 1 here" ng-model="inputs.side1"
+          min="0" required>
+      </div>
+      <div class="ts-row">
+        <label>Side 2:</label>
+        <input type="number" name="side2" id="side2" step=any class="ts-input-sides" placeholder="Please enter side 2 here" ng-model="inputs.side2"
+          min="0" m required>
+      </div>
+      <div class="ts-row">
+        <label>Side 3:</label>
+        <input type="number" name="side3" id="side3" step=any class="ts-input-sides" placeholder="Please enter side 3 here" ng-model="inputs.side3"
+          min="0"  required>
+      </div>
+      <div class="ts-row">
+        <button ng-click='checkTraingle()' ng-disabled="myForm.$invalid" class="btn btn-lg btn-success">Check <span class="glyphicon glyphicon-ok"></span></button>
+      </div>
+      <div role="alert">
+        <span class="error" ng-show="myForm.input.$error.required">
+      Required!</span>
+        <span class="error" ng-show="myForm.input.$error.number">
+      Not valid number!</span>
+      </div>
+    </form>
+
+  </div>
+
+  <div class="row marketing">
+    <p class="big-text"> {{triangleType}}</p>
+  </div>
+</div>
