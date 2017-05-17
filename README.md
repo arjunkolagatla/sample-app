@@ -14,6 +14,7 @@ npm install -g  grunt-cli bower
 
 ## install grunt  & bower to local project
 npm install grunt
+
 npm install bower
 
 
